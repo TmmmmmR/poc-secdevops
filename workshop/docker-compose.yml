@@ -1,0 +1,63 @@
+version: '3.2'
+
+networks:
+  workshop_lab:
+    driver: bridge
+
+services:
+
+  sonarqube:
+    build:
+      context: sonarqube/
+    ports:
+      - 9000:9000
+      - 9092:9092
+    container_name: sonarqube
+    networks:
+      - workshop_lab
+
+  jenkins:
+    build:
+      context: jenkins/
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - /tmp/jenkins/:/var/jenkins_home #Remember that, the tmp directory is designed to be wiped on system reboot.
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home:/home
+    networks:
+      - workshop_lab
+
+  arachni:
+    image: ahannigan/docker-arachni
+    build: .
+    ports:
+      - "9292:9292"
+      - "7331:7331"
+    command: bin/arachni_web -o 0.0.0.0
+    container_name: arachni
+    networks:
+      - workshop_lab
+
+  threadfix:
+    image: jmbmxer/threadfix
+    ports:
+      - 8443:8443
+    container_name: threadfix
+    entrypoint: ./threadfix.sh start
+    networks:
+      - workshop_lab
+
+  testvuln:
+    image: dhatanian/ticketmagpie
+    ports:
+      - 9091:9091
+    container_name: threadfix
+    environment:
+      - SPRING_PROFILES_ACTIVE=hsqldb
+    networks:
+      - workshop_lab
