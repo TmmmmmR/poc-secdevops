@@ -25,8 +25,13 @@ RUN wget --no-verbose -O /tmp/$MAVEN_NAME.tar.gz http://archive.apache.org/dist/
     && rm -f /tmp/$MAVEN_NAME.tar.gz
 
 # install inspec - chef
-RUN apt-get -y install ruby ruby-dev gcc g++ make
-RUN gem install inspec
+#RUN apt-get -y install ruby ruby-dev gcc g++ make
+#RUN gem install inspec
+
+# install gittyleaks
+RUN apt install -y python-pip
+RUN pip install gittyleaks
+
 
 RUN usermod -aG docker,staff jenkins
 

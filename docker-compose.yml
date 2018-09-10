@@ -7,8 +7,9 @@ networks:
 services:
 
   sonarqube:
-    build:
-      context: sonarqube/
+#    build:
+#      context: sonarqube/
+    image: sonarqube
     ports:
       - 9000:9000
       - 9092:9092
@@ -26,9 +27,8 @@ services:
       - 50000:50000
     container_name: jenkins
     volumes:
-      - /tmp/jenkins/:/var/jenkins_home #Remember that, the tmp directory is designed to be wiped on system reboot.
+      - /home/jenkins/:/var/jenkins_home #Remember that, the tmp directory is designed to be wiped on system reboot.
       - /var/run/docker.sock:/var/run/docker.sock
-      - /home:/home
     networks:
       - workshop_lab
 
@@ -38,7 +38,7 @@ services:
     ports:
       - "9292:9292"
       - "7331:7331"
-    command: bin/arachni_web -o 0.0.0.0
+    command: bin/arachni_rest_server --address 0.0.0.0
     container_name: arachni
     networks:
       - workshop_lab
@@ -55,8 +55,8 @@ services:
   testvuln:
     image: dhatanian/ticketmagpie
     ports:
-      - 9091:9091
-    container_name: threadfix
+      - 8081:8080
+    container_name: testvuln
     environment:
       - SPRING_PROFILES_ACTIVE=hsqldb
     networks:
