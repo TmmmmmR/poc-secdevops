@@ -4,7 +4,7 @@ This repository is a tutorial it tries to exemplify how to include security cont
 
 The [ticketmagpie](https://github.com/TmmmmmR/ticketmagpie/) is used as an example with a configured "Security Gate" to check the security level of the n
 
-Original DevOps pipeline (without security controls) : https://github.com/hakdogan/jenkins-pipeline
+Original/Simplified DevOps pipeline (without security controls) : https://github.com/hakdogan/jenkins-pipeline
 
 
 ## First step, running up the services
@@ -124,10 +124,6 @@ After clicking **Save and Finish** and **Start using Jenkins** buttons, we shoul
 ```
 - /var/run/docker.sock:/var/run/docker.sock
 ```
-
-The purpose is to communicate between the ``Docker Daemon`` and the ``Docker Client``(_we will install it on Jenkins_) over the socket. Like the docker client, we also need ``Maven`` to compile the application. For the installation of these tools, we need to perform the ``Maven`` and ``Docker Client`` configurations under _Manage Jenkins -> Global Tool Configuration_ menu.
-
-![](images/008.png)
 
 ## Sonarqube configuration
 
