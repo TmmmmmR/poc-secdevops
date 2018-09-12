@@ -2,7 +2,7 @@
 
 This repository is a tutorial it tries to exemplify how to include security controls before/after each step of CI/CD pipline.
 
-The [ticketmagpie](https://github.com/TmmmmmR/ticketmagpie/) is used as an example with a configured "Security Gate" to check the security level of the n
+The [ticketmagpie](https://github.com/TmmmmmR/ticketmagpie/) is used as an example with a configured "Security Gate" to perform security controls (SAST) before pushing code to the production environnement.
 
 Original/Simplified DevOps pipeline (without security controls) : https://github.com/hakdogan/jenkins-pipeline
 
