@@ -1,4 +1,4 @@
-# A tutorial about secure fast (and furious) Continuous Integration and Continuous Delivery by Dockerize Jenkins Pipeline
+# A tutorial about securing fast (and furious) Continuous Integration and Continuous Delivery by Dockerize Jenkins Pipeline
 
 This repository is a tutorial it tries to exemplify how to include security controls before/after each step of CI/CD pipline.
 
