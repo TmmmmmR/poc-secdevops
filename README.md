@@ -121,6 +121,7 @@ After entering the password, we will download recommended plugins and define an 
 ![](images/007.png)
 
 After clicking **Save and Finish** and **Start using Jenkins** buttons, we should be seeing the Jenkins homepage. One of the seven goals listed above is that we must have the ability to build an image in the Jenkins being dockerized. Take a look at the volume definitions of the Jenkins service in the compose file.
+
 ```
 - /var/run/docker.sock:/var/run/docker.sock
 ```
@@ -146,10 +147,14 @@ For ``Sonarqube`` we have made the following definitions in the ``pom.xml`` file
 
 In the docker compose file, we gave the name of the Sonarqube service which is ``sonarqube``, this is why in the ``pom.xml`` file, the sonar URL was defined as http://sonarqube:9000.
 
-## Arachni configuration 
+## Arachni configuration
 
-TBD
+Step-by-step instructions will be presented during the workshop.
 
-## Threadfix configuration 
+## Find-sec-bugs configuration 
 
-TBD
+Step-by-step instructions will be presented during the workshop.
+
+## Vulnerablity manThreadfix configuration 
+
+Step-by-step instructions will be presented during the workshop.
