@@ -158,3 +158,16 @@ Step-by-step instructions will be presented during the workshop.
 ## Vulnerablity manThreadfix configuration 
 
 Step-by-step instructions will be presented during the workshop.
+
+## Docker usage
+
+List running images :
+
+```docker container ls```
+
+Run docker interactive mode :
+
+```docker exec -it b8835ab2bf71 /bin/bash```
+
+
+
