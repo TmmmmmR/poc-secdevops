@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nenashev
+Build-Jdk: 1.8.0_121
+Extension-Name: locale
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: locale
+Implementation-Version: 1.4
+Plugin-Class: hudson.plugins.locale.PluginImpl
+Group-Id: io.jenkins.plugins
+Short-Name: locale
+Long-Name: Locale plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Locale+Plugin
+Plugin-Version: 1.4
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Oleg Nenashev:oleg_nenas
+ hev:
+Support-Dynamic-Loading: true
+

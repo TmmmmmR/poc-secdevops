@@ -1,0 +1,254 @@
+Started by user [8mha:////4OBpYlhabvg0Q2a7EJLZjUGg+blUgdsb2J3mWATr7fMlAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Replayed [8mha:////4IFJop3fXHq4U+t43CN8nDRfBqyWHg7iTdXr+CHAf+21AAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgY5/az8JP2s1FTdxIICMLugKD+lNLkkMz9P31AfAH2bdoLTAAAA[0m#1
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to http://root@eef87f38e5a2/root/jee-app.git
+ > git config remote.origin.url http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --progress origin +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/development
+Seen branch in repository origin/master
+Seen branch in repository origin/production
+Seen 3 remote branches
+Obtained Jenkinsfile from 5801c1478c7c748efa988e59eb3e7e7c9445a0ab
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4Gv008qFluCgKPyJsQqR2uqmrJ4Y1Sy2ZsuEEb89T9lSAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4HMFE0W1+77Vq65WrHpaqd5jyDCJ8yUWJTM3oeZtYxNLAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4BQg4TT2W7Ii7z2nLepP8KgvOvosm+Qtepxd1BXxanhtAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/jee-app_production@2
+[8mha:////4E/+fhrCOLhkRGS1QJ0vczlewg5IkaKSPWwssjYUhcaeAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4EYY8sZL0+DAFPQrzceRXlYqbsKr9TK0r//QNU0NUgnLAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4PznydLbMVJACxpNZTAOL70LYUACsZoYNZnB95QrJrfmAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4M0Iae5jAEMxIC/8zjz2cY5EZWOU/Qy2SDKenYL3qC/QAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+No credentials specified
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository http://root@eef87f38e5a2/root/jee-app.git
+ > git init /var/jenkins_home/workspace/jee-app_production@2 # timeout=10
+Fetching upstream changes from http://root@eef87f38e5a2/root/jee-app.git
+ > git --version # timeout=10
+ > git fetch --no-tags --progress http://root@eef87f38e5a2/root/jee-app.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching without tags
+Fetching upstream changes from http://root@eef87f38e5a2/root/jee-app.git
+ > git fetch --no-tags --progress http://root@eef87f38e5a2/root/jee-app.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision 5801c1478c7c748efa988e59eb3e7e7c9445a0ab (production)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5801c1478c7c748efa988e59eb3e7e7c9445a0ab
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b production 5801c1478c7c748efa988e59eb3e7e7c9445a0ab
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 5801c1478c7c748efa988e59eb3e7e7c9445a0ab # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+Resetting working tree
+ > git reset --hard # timeout=10
+ > git clean -fdx # timeout=10
+[8mha:////4E5ZlsLjlWw7B5MY0u6cOiFvLZBTykLLtdYuaDQbHW7OAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4BMmjprG4W1Acug4ESkTvyU34E19yZzUl8c+CT2hgh1bAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4IgHP/P1XiiWYNaohWcJhEGn8JOPjQBRQuvTKBzEcs5pAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4PZ0szZduxhm+8WpBjYzAlSIX6c+PUIaYkknkSwuaA3mAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4GbBPSvcQ8FnPoWZJXpjuXSUSJ/IMvx4+33wZQO5iNS3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4Giu5Ii0H/iWNM6iMt25j7pv/1PUgBjqpPC6ETGrllurAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (build)
+[8mha:////4OxgtwuURXu9uQUqAQOoZLz588xC3hldbWoNK2+BctQfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ticketmagpie 0.1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ticketmagpie ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ticketmagpie ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 64 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ ticketmagpie ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /var/jenkins_home/workspace/jee-app_production@2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ticketmagpie ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/jee-app_production@2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ ticketmagpie ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/jee-app_production@2/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ ticketmagpie ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ ticketmagpie ---
+[INFO] Building jar: /var/jenkins_home/workspace/jee-app_production@2/target/ticketmagpie-0.1.0.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.3.1.RELEASE:repackage (default) @ ticketmagpie ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ticketmagpie ---
+[INFO] Installing /var/jenkins_home/workspace/jee-app_production@2/target/ticketmagpie-0.1.0.jar to /root/.m2/repository/com/ticketmagpie/ticketmagpie/0.1.0/ticketmagpie-0.1.0.jar
+[INFO] Installing /var/jenkins_home/workspace/jee-app_production@2/pom.xml to /root/.m2/repository/com/ticketmagpie/ticketmagpie/0.1.0/ticketmagpie-0.1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.474 s
+[INFO] Finished at: 2019-02-15T10:40:08+00:00
+[INFO] Final Memory: 33M/283M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4OPmcf89FHcwRm3HhLaao/xnpRss5zTV3hRTVVGgjw8LAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4AomD9NpNuBHNHAoVvL8jV/29PKr74wIL5tSKB/SaMCwAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4NT2Dn7HVBzWDxJVNwjG+dpqTGe1layROVI+9rPuYXjsAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4BpTTU49C6UNnTFdsfK8e92Y4rGEqcC6cRuhiozdkAOBAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (SonarQube analysis)
+[8mha:////4HIPa9I7DptGCCCzkmHIAZyfwtY+ZL/ajXvOtBZQ4e4AAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonar
+[8mha:////4I0sHMIwy5XmxfOBH4U9+N7/dIRV4ROgTW40HeQ9e6IMAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4HJZilw6pB16Kp+HoPzneZ2hjDYMEpkL6MKWrTZgAot+AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ mvn sonar:sonar
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ticketmagpie 0.1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.6.0.1398:sonar (default-cli) @ ticketmagpie ---
+[INFO] User cache: /root/.sonar/cache
+[INFO] SonarQube version: 7.6.0
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=106ms
+[INFO] Server id: BF41A1F2-AWjwr9bF9c5rxm-oRL3w
+[INFO] User cache: /root/.sonar/cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=56ms
+[INFO] Load/download plugins (done) | time=139ms
+[INFO] Process project properties
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=5ms
+[INFO] Project key: com.ticketmagpie:ticketmagpie
+[INFO] Base dir: /var/jenkins_home/workspace/jee-app_production@2
+[INFO] Working dir: /var/jenkins_home/workspace/jee-app_production@2/target/sonar
+[INFO] Load project settings
+[INFO] Load project settings (done) | time=20ms
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=88ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=47ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=2649ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=65ms
+[INFO] Indexing files...
+[INFO] Project configuration:
+[INFO] 22 files indexed
+[INFO] Quality profile for java: FindBugs Security Audit
+[INFO] Quality profile for xml: Sonar way
+[INFO] ------------- Run sensors on module ticketmagpie
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 8
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=19ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=2ms
+[INFO] Java Main Files AST scan
+[INFO] 20 source files to be analyzed
+[INFO] 20/20 source files have been analyzed
+[WARNING] Classes not found during the analysis : [org.openid4java.consumer.ConsumerException, org.openid4java.consumer.ConsumerManager, org.springframework.ldap.core.support.BaseLdapPathContextSource, org.springframework.security.ldap.authentication.BindAuthenticator, org.springframework.security.ldap.authentication.LdapAuthenticationProvider, org.springframework.security.ldap.authentication.LdapAuthenticator, org.springframework.security.ldap.authentication.PasswordComparisonAuthenticator, org.springframework.security.ldap.search.LdapUserSearch, org.springframework.security.ldap.userdetails.LdapAuthoritiesPopulator, org.springframework.security.ldap.userdetails.UserDetailsContextMapper, org.springframework.security.openid.AxFetchListFactory, org.springframework.security.openid.OpenIDAuthenticationFilter, org.springframework.security.openid.OpenIDAuthenticationToken, org.springframework.security.openid.OpenIDConsumer]
+[INFO] Java Main Files AST scan (done) | time=1041ms
+[INFO] Java Test Files AST scan
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Java Test Files AST scan (done) | time=54ms
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1713ms
+[INFO] Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+[INFO] Sensor FindBugs Sensor [findbugs]
+[INFO] Loading findbugs plugin: /var/jenkins_home/workspace/jee-app_production@2/target/sonar/findbugs/findsecbugs-plugin.jar
+[INFO] Findbugs output report: /var/jenkins_home/workspace/jee-app_production@2/target/sonar/findbugs-result.xml
+The following classes needed for analysis were missing:
+  mapRow
+[INFO] Sensor FindBugs Sensor [findbugs] (done) | time=3583ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/var/jenkins_home/workspace/jee-app_production@2/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=2ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor JavaXmlSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor JavaXmlSensor [java] (done) | time=160ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=12ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=153ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor Zero Coverage Sensor (done) | time=37ms
+[INFO] ------------- Run sensors on project
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=41ms
+[INFO] 5 files had no CPD blocks
+[INFO] Calculating CPD for 15 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 170ms, dir size=148 KB
+[INFO] Analysis report compressed in 36ms, zip size=66 KB
+[INFO] Analysis report uploaded in 72ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://sonarqube:9000/dashboard?id=com.ticketmagpie%3Aticketmagpie
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://sonarqube:9000/api/ce/task?id=AWjwvj-osOwQxIcVaR7Z
+[INFO] Analysis total time: 11.079 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.792 s
+[INFO] Finished at: 2019-02-15T10:40:26+00:00
+[INFO] Final Memory: 44M/746M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4EKWu30AXeZ1eE11n0DEaLsyT0epgpK1l+GQR8eyvDFLAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJu8TlHX9qf0b7E/nQb4AAAA=[0m[Pipeline] }
+[8mha:////4O29IbaQKq8qIsMIGwBkl8bpPqmsc9PMH6EG/i3Qc6yiAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4GlPGlFfPS4LSVUqos35m5BHA0KHzRf04ifi5BwIm6QGAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAAHdIsr4AAAA=[0m[Pipeline] }
+[8mha:////4IZOyGhRqqaqmLaj0JyedlqQ27T+bpPKlkqhkw2H5OmtAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwANLmr6b4AAAA=[0m[Pipeline] // stage
+[8mha:////4O2tUvUTrer/yN+eYy/dGpqdwfNtuZEJxAS3wmHfZh4sAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZWBBTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQHkVNMxwgAAAA==[0m[Pipeline] stage
+[8mha:////4GZaWwag/3VdTbRAURarwuRoeE71PHA9BKRmrl1Tsr1dAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Deliver for development)
+Stage "Deliver for development" skipped due to when conditional
+[8mha:////4Iz9X9g9Y27Q+dFb6QY5N6Bt7sfhIZH/ipNaa9yqku7IAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0YCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEp+Rh+vgAAAA==[0m[Pipeline] }
+[8mha:////4A2Y30yr05yUKur9h+48l5l0VNmQyzHXxvsCCDblus7YAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0aGkPCvgAAAA==[0m[Pipeline] // stage
+[8mha:////4AZGoi1V7J2AjKE8BGBXVHejWRfvYtxseECkwrTk2yOOAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUihExdY2ycIKQhJA2+r8kKe3EibgadyBQiQkPlm3Jes8XVDHAkYJlncHeYVSODX60ObGJQn/xNLGOzkwRRvKGCTMJ0qZdqqBkYFFRworD2qDyFB3aBBveybusvURbn1LI24FD6fQNHlDwTE4ypG+ZA2yvo46EP85fAMxDgrJpsu13n2f1Bk28/UHCAAAA[0m[Pipeline] stage
+[8mha:////4KmZD4AnwMoxsmmbJi1YVk79dpVqdvxX0dj0GxzX/wvAAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Security Gate)
+[8mha:////4MRc1auFcubVO13R9OczFPBe6ZLUliDDqa7E82iIn+4DAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfettHKdL4AAAA=[0m[Pipeline] sh
++ sleep 5s
+[8mha:////4FKXmVBAXt7AXLLC7l9QqI3EJ8r5IEiuVeKvzqEYcnKFAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUqCNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfFBSK8IAAAA=[0m[Pipeline] timeout
+Timeout set to expire in 5 min 0 sec
+[8mha:////4IMGTocftXuolRdf9xpb5oyB8t4LvbinBisMA6IY/rPHAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] {
+[8mha:////4PRZIotIG/EmgjdPShEmIGAe48ywHLSrTDOv47Ib4N3nAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASMfXIzCAAAA[0m[Pipeline] script
+[8mha:////4GGEibmvSfX1cLIxHEPmTmmDAD0MGWB7suRLK2k7LnD4AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] {
+[8mha:////4IZakIXrPIfl7i65tHRSqy7hi2Qgih6nX5NoWX/ZRLz9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAF9GxrMvgAAAA==[0m[Pipeline] waitForQualityGate
+Checking status of SonarQube task 'AWjwvj-osOwQxIcVaR7Z' on server 'sonar'
+SonarQube task 'AWjwvj-osOwQxIcVaR7Z' status is 'SUCCESS'
+SonarQube task 'AWjwvj-osOwQxIcVaR7Z' completed. Quality gate is 'ERROR'
+[8mha:////4MB3RfVbv7jU7jyNBlbvTsalUq0MFFhjrJZwACYT8+WnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q2yB4JLvgAAAA==[0m[Pipeline] error
+[8mha:////4MrVDShZd5c/CPbWZClOSP9gowUUran5qAmv193UQ5fLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3vIC99vgAAAA==[0m[Pipeline] }
+[8mha:////4LEIKDbceW69giz7T7O1k7xCCYZ6FVwhtdTwvDm9Ru83AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AETHo4GvgAAAA==[0m[Pipeline] // script
+[8mha:////4HdXEjxPRTH+lWEO8Oq2kZZZwZ7wCqjyvPzVRYEQesM3AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGW9z3WoPyD91bq+AAAA[0m[Pipeline] }
+[8mha:////4G8EPPa3Bhg5Rc1Cn7Rs1u7aM4KsRfxBCVdD9XfXcxZpAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRCB2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOVhn6uuPy0aJaK+AAAA[0m[Pipeline] // timeout
+[8mha:////4J5I8OlWJxxHBMC0byR0Vzebe8DZHG3TPkek5eTl1sqPAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRCh2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BOWhzlXvP6Sod4e+AAAA[0m[Pipeline] }
+[8mha:////4HJ9tEiIHqb7/pysCxl5cVxC6EFb6Xkh/61lRh1adQ0oAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCRDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGVd5zrsP4qode2+AAAA[0m[Pipeline] // stage
+[8mha:////4LSmKSZMRy/ZEt4/ZNNvwocM3lK/K+NCYTjp0RJ3fbapAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUlWBCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQFwE5fUwgAAAA==[0m[Pipeline] stage
+[8mha:////4LfuNMk0UXvbwEKiTgMkP46N5UbFRiUnekqQBVS5RTwtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] { (Deploy for production)
+Stage "Deploy for production" skipped due to earlier failure(s)
+[8mha:////4JIX/Rr8xItupFJ10STlMNVkWVeGZ1EFjJCoaQjSJP46AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSICgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N9bpw82+AAAA[0m[Pipeline] }
+[8mha:////4ACw7D2fKXABvl4UPFnLSmSqFhC9BZGauIhshB2Fa1lJAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgISEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG5CpylvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NgVrkMHZulpcBdTjS5PV1cevd88Ozfyi99X6ykI5xc6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSDQIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w9A6doUvgAAAA==[0m[Pipeline] }
+[8mha:////4AshkbuCRecV29fzszh28C0s1SLiNt/ToLO2l5mXgABIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOISCipEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOWhzrWvP6qDpeK+AAAA[0m[Pipeline] // withEnv
+[8mha:////4OeDZba9A39/UcLqbdZdsHcTSNoKX5abQq5Pq3V2MkTYAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRElSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPI0C0dL0AAAA=[0m[Pipeline] }
+[8mha:////4AQ8GTxYI76Saqke8JVfCavhRG9lBWa5oFSJ58sHrVekAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsPUK9wrb0AAAA=[0m[Pipeline] // node
+[8mha:////4FGDmQfZBQKF49XlRsXUK/fs3jMAc6ly/A8TgtrjEVtSAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8TZNsPdrYX570AAAA=[0m[Pipeline] End of Pipeline
+ERROR: Pipeline aborted due to quality gate failure: ERROR
+Finished: FAILURE

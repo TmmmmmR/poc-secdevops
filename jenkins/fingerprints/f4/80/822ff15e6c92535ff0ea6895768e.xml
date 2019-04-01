@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-11 00:23:38.693 UTC</timestamp>
+  <md5sum>f480822ff15e6c92535ff0ea6895768e</md5sum>
+  <fileName>Credential id=DOJO_API_KEY name=DOJO_API_KEY</fileName>
+  <usages>
+    <entry>
+      <string>jee-app/development</string>
+      <ranges>1-2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

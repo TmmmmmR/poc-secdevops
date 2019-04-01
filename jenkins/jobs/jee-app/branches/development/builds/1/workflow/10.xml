@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.63">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.63">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=development</string>
+            <string>GIT_COMMIT=1eaadc2e8c6b3fde750a82ca2cc8d0312f0aef57</string>
+            <string>GIT_LOCAL_BRANCH=development</string>
+            <string>GIT_URL=http://root@eef87f38e5a2/root/jee-app.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1550226938250</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

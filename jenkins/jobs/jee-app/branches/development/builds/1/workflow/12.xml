@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.63">
+    <parentIds>
+      <string>11</string>
+    </parentIds>
+    <id>12</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.63">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>_SOURCE_REPO=http://68.183.120.111:8082/root/jee-app.git</string>
+            <string>_DOJO_URL=http://68.183.120.111:8000</string>
+            <string>_DOJO_SETTINGS=-e SOURCE_REPO=http://68.183.120.111:8082/root/jee-app.git -e DOJO_URL=http://68.183.120.111:8000 -e DOJO_ENGAGEMENT_ID=1</string>
+            <string>_DOJO_ENGAGEMENT_ID=1</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1550226938320</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

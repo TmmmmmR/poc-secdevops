@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: phil.madden
+Build-Jdk: 1.8.0_112
+Extension-Name: hashicorp-vault-pipeline
+Specification-Title: Enables pulling of vault values as a pipeline step
+Implementation-Title: hashicorp-vault-pipeline
+Implementation-Version: 1.2
+Group-Id: io.jenkins.plugins
+Short-Name: hashicorp-vault-pipeline
+Long-Name: Hashicorp Vault Pipeline Plugin
+Plugin-Version: 1.2
+Hudson-Version: 2.138.1
+Jenkins-Version: 2.138.1
+Plugin-Dependencies: hashicorp-vault-plugin:2.2.0,workflow-api:2.15,wo
+ rkflow-cps:2.28
+Plugin-Developers: Phil Madden:philmadden83:philmadden83@gmail.com
+

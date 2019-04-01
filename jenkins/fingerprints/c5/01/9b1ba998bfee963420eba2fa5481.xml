@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-02-11 00:44:14.109 UTC</timestamp>
+  <md5sum>c5019b1ba998bfee963420eba2fa5481</md5sum>
+  <fileName>Credential id=MOBSF_API_KEY name=MOBSF_API_KEY</fileName>
+  <usages>
+    <entry>
+      <string>jee-app/development</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,30 @@
+Started by user [8mha:////4OBpYlhabvg0Q2a7EJLZjUGg+blUgdsb2J3mWATr7fMlAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[Fri Feb 15 10:35:31 UTC 2019] Starting branch indexing...
+ > git --version # timeout=10
+ > git ls-remote --symref http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to http://root@eef87f38e5a2/root/jee-app.git
+ > git config remote.origin.url http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+Fetching & pruning origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --progress origin +refs/heads/*:refs/remotes/origin/* --prune
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git ls-remote -h http://root@eef87f38e5a2/root/jee-app.git # timeout=10
+Checking branches...
+  Checking branch production
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: production
+  Checking branch master
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch development
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: development
+Processed 3 branches
+[Fri Feb 15 10:35:32 UTC 2019] Finished branch indexing. Indexing took 0.56 sec
+Finished: SUCCESS

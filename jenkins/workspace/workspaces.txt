@@ -1,0 +1,4 @@
+jee-app/development
+jee-app_development
+jee-app/production
+jee-app_production

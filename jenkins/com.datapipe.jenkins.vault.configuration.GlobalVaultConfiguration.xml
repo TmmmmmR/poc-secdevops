@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.datapipe.jenkins.vault.configuration.GlobalVaultConfiguration plugin="hashicorp-vault-plugin@2.2.0">
+  <configuration>
+    <vaultUrl></vaultUrl>
+    <vaultCredentialId></vaultCredentialId>
+  </configuration>
+</com.datapipe.jenkins.vault.configuration.GlobalVaultConfiguration>

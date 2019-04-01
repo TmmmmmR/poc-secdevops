@@ -1,0 +1,50 @@
+--- Copying files at Sun Feb 10 15:02:04 UTC 2019
+INSTALLED init.groovy.d/tcp-slave-agent-port.groovy
+--- Copying files at Sun Feb 10 15:39:26 UTC 2019
+--- Copying files at Sun Feb 10 16:18:23 UTC 2019
+INSTALLED plugins/blueocean-rest-impl.jpi : 1.10.2
+INSTALLED plugins/blueocean-jira.jpi : 1.10.2
+INSTALLED plugins/favorite.jpi : 2.3.2
+INSTALLED plugins/blueocean-dashboard.jpi : 1.10.2
+INSTALLED plugins/cloudbees-bitbucket-branch-source.jpi : 2.4.1
+INSTALLED plugins/blueocean-rest.jpi : 1.10.2
+INSTALLED plugins/blueocean-pipeline-scm-api.jpi : 1.10.2
+INSTALLED plugins/mercurial.jpi : 2.5
+INSTALLED plugins/blueocean-personalization.jpi : 1.10.2
+INSTALLED plugins/handy-uri-templates-2-api.jpi : 2.1.6-1.0
+INSTALLED plugins/variant.jpi : 1.1
+INSTALLED plugins/locale.jpi : 1.4
+INSTALLED plugins/blueocean-events.jpi : 1.10.2
+INSTALLED plugins/blueocean-commons.jpi : 1.10.2
+INSTALLED plugins/blueocean-pipeline-api-impl.jpi : 1.10.2
+INSTALLED plugins/blueocean-bitbucket-pipeline.jpi : 1.10.2
+INSTALLED plugins/lockable-resources.jpi : 2.4
+INSTALLED plugins/github-organization-folder.jpi : 1.6
+INSTALLED plugins/blueocean-github-pipeline.jpi : 1.10.2
+INSTALLED plugins/pubsub-light.jpi : 1.12
+INSTALLED plugins/blueocean-i18n.jpi : 1.10.2
+INSTALLED plugins/blueocean-jwt.jpi : 1.10.2
+INSTALLED plugins/blueocean-config.jpi : 1.10.2
+INSTALLED plugins/sse-gateway.jpi : 1.17
+INSTALLED plugins/blueocean-pipeline-editor.jpi : 1.10.2
+INSTALLED plugins/blueocean-display-url.jpi : 2.2.0
+INSTALLED plugins/blueocean-autofavorite.jpi : 1.2.3
+INSTALLED plugins/jira.jpi : 3.0.5
+INSTALLED plugins/blueocean-core-js.jpi : 1.10.2
+INSTALLED plugins/blueocean.jpi : 1.10.2
+INSTALLED plugins/blueocean-web.jpi : 1.10.2
+INSTALLED plugins/htmlpublisher.jpi : 1.18
+INSTALLED plugins/jenkins-design-language.jpi : 1.10.2
+INSTALLED plugins/blueocean-git-pipeline.jpi : 1.10.2
+--- Copying files at Sun Feb 10 16:19:29 UTC 2019
+--- Copying files at Sun Feb 10 16:20:15 UTC 2019
+--- Copying files at Sun Feb 10 16:26:18 UTC 2019
+--- Copying files at Sun Feb 10 16:27:09 UTC 2019
+--- Copying files at Sun Feb 10 16:28:13 UTC 2019
+--- Copying files at Sun Feb 10 16:29:32 UTC 2019
+--- Copying files at Sun Feb 10 20:34:41 UTC 2019
+--- Copying files at Wed Feb 13 12:14:57 UTC 2019
+--- Copying files at Fri Feb 15 09:34:34 UTC 2019
+--- Copying files at Fri Feb 15 09:36:10 UTC 2019
+--- Copying files at Fri Feb 15 10:22:05 UTC 2019
+--- Copying files at Fri Feb 15 10:23:00 UTC 2019

@@ -29,8 +29,8 @@ RUN wget --no-verbose -O /tmp/$MAVEN_NAME.tar.gz http://archive.apache.org/dist/
 #RUN gem install inspec
 
 # install gittyleaks
-RUN apt install -y python-pip
-RUN pip install gittyleaks
+#RUN apt install -y python-pip
+#RUN pip install gittyleaks
 
 
 RUN usermod -aG docker,staff jenkins

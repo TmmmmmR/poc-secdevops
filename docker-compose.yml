@@ -7,8 +7,8 @@ networks:
 services:
 
   sonarqube:
-#    build:
-#      context: sonarqube/
+    build:
+      context: sonarqube/
     image: sonarqube
     ports:
       - 9000:9000
@@ -16,6 +16,19 @@ services:
     container_name: sonarqube
     networks:
       - workshop_lab
+
+  zap:
+    build:
+      context: zap/
+      dockerfile: Dockerfile
+    ports:
+      - 8090:8090
+#    command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.disablekey=true -config database.recoverylog=false -config connection.timeoutInSecs=120 -config api.ad$
+    command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.disablekey=true -config database.recoverylog=false -config connection.timeoutInSecs=120 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
+    container_name: zap
+    networks:
+      - workshop_lab
+
 
   jenkins:
     build:
@@ -27,36 +40,73 @@ services:
       - 50000:50000
     container_name: jenkins
     volumes:
-      - /home/jenkins/:/var/jenkins_home #Remember that, the tmp directory is designed to be wiped on system reboot.
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ./jenkins/:/var/jenkins_home 
+      - /var/run/docker.sock:/var/run/docker.sock # This way Jenkins docker can start new sibling containers 
     networks:
       - workshop_lab
 
-  arachni:
-    image: ahannigan/docker-arachni
-    build: .
+  vault:
+    image: "vault"
+    hostname: "vault"
+    environment:
+      VAULT_ADDR: http://vault:8200
     ports:
-      - "9292:9292"
-      - "7331:7331"
-    command: bin/arachni_rest_server --address 0.0.0.0
-    container_name: arachni
+      - "8200:8200"
+    volumes:
+      - ./vault/tools/wait-for-it.sh:/wait-for-it.sh
+      - ./vault:/config
+      - ./vault/policies:/policies
+      - ./vault/data:/vault/data
+      - ./vault/logs:/vault/logs
+    entrypoint: /wait-for-it.sh -t 20 -h consul -p 8500 -s -- vault server -config=/config/with-consul.hcl
     networks:
       - workshop_lab
 
-  threadfix:
-    image: jmbmxer/threadfix
+  consul:
+    image: "consul"
+    hostname: "consul"
+    command: "agent -dev -client 0.0.0.0"
     ports:
-      - 8443:8443
-    container_name: threadfix
-    entrypoint: ./threadfix.sh start
+      - "8400:8400"
+      - "8500:8500"
+      - "8600:53/udp"
+    volumes:
+      - ./consul/data:/consul/data
     networks:
       - workshop_lab
+
+  gitlab:
+    image: gitlab/gitlab-ce:9.0.2-ce.0
+    ports:
+      - "8082:80"
+      - "8443:443"
+      - "8022:22"
+    container_name: gitlab
+    networks:
+      - workshop_lab
+
+  defectdojo:
+    image: cybercops/dojo
+    ports:
+      - 8000:8000
+    container_name: defectdojo
+    networks:
+      - workshop_lab
+
+  mobsf:
+    image: opensecurity/mobile-security-framework-mobsf:latest
+    ports:
+      - 8081:8000
+    container_name: mobsf
+    networks:
+      - workshop_lab
+
 
   testvuln:
     image: dhatanian/ticketmagpie
     ports:
       - 8081:8080
-    container_name: testvuln
+    container_name: cybercops/testvuln
     environment:
       - SPRING_PROFILES_ACTIVE=hsqldb
     networks:

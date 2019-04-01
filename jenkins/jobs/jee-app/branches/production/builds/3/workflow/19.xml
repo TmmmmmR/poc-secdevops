@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.63">
+    <parentIds>
+      <string>18</string>
+    </parentIds>
+    <id>19</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreWrapperStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.63">
+      <arguments>
+        <entry>
+          <string>delegate</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.17">
+            <symbol>withSonarQubeEnv</symbol>
+            <arguments class="tree-map">
+              <entry>
+                <string>&lt;anonymous&gt;</string>
+                <string>sonar</string>
+              </entry>
+            </arguments>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1550227210331</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

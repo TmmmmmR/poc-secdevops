@@ -1,0 +1,20 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.sonar.SonarGlobalConfiguration plugin="sonar@2.8.1">
+  <installations>
+    <hudson.plugins.sonar.SonarInstallation>
+      <name>sonar</name>
+      <serverUrl>http://sonarqube:9000</serverUrl>
+      <serverAuthenticationToken>{AQAAABAAAAAwf85v9BCU6zl7s7+v9YFvYW4y40bHdLUBbfReV73xsbkUWorRiqeSJ8EK1r79xoHQ0i9lUG7idsybXKgJJQZf7A==}</serverAuthenticationToken>
+      <mojoVersion></mojoVersion>
+      <additionalProperties></additionalProperties>
+      <additionalAnalysisProperties></additionalAnalysisProperties>
+      <triggers>
+        <skipScmCause>false</skipScmCause>
+        <skipUpstreamCause>false</skipUpstreamCause>
+        <envVar></envVar>
+      </triggers>
+    </hudson.plugins.sonar.SonarInstallation>
+  </installations>
+  <buildWrapperEnabled>false</buildWrapperEnabled>
+  <dataMigrated>true</dataMigrated>
+</hudson.plugins.sonar.SonarGlobalConfiguration>

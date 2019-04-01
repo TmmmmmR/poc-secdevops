@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='io.jenkins.plugins' artifactId='hashicorp-vault-pipeline' version='1.2'><l:dependency name='Hashicorp Vault Pipeline Plugin' groupId='io.jenkins.plugins' artifactId='hashicorp-vault-pipeline' version='1.2' url=''><l:description>Enables pulling of vault values as a pipeline step</l:description><l:license name='MIT License' url='https://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>
