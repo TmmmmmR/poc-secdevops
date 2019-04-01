@@ -1,0 +1,34 @@
+pipeline {
+  agent any
+  stages {
+  
+    stage('Checkout') {
+        steps {
+            checkout scm
+        }
+    }
+    stage('Security build') {
+      parallel {
+        stage('Start parallel builds') {
+          steps {
+            sh 'echo "builds are run!"'
+          }
+        }
+        stage('Start ZAP Analysis') {
+          steps {
+          withCredentials([string(credentialsId: 'DOJO_API_KEY', variable: '_DOJO_API_KEY')]) {
+            sh 'sudo docker run  -t cybercops/zap $_ZAP_SETTINGS -A ${_DOJO_API_KEY}'
+          }
+          }
+        }
+      }
+    }
+  }
+  environment {
+    _DOJO_URL = 'http://68.183.120.111:8000'
+    _DOJO_ENGAGEMENT_ID = '1'
+    _TARGET_URL = 'http://testphp.vulnweb.com/'
+    _DOJO_SETTINGS = "-U ${_DOJO_URL} -I ${_DOJO_ENGAGEMENT_ID}"
+    _ZAP_SETTINGS = "zap-baseline.py -t ${_TARGET_URL} ${_DOJO_SETTINGS}"
+}
+}

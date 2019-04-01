@@ -1,0 +1,33 @@
+pipeline {
+  agent any
+  stages {
+  
+    stage('Checkout') {
+        steps {
+            checkout scm
+        }
+    }
+    stage('Security build') {
+      parallel {
+        stage('Start parallel builds') {
+          steps {
+            sh 'echo "builds are run!"'
+          }
+        }
+        stage('Start dependency-check') {
+          steps {
+          withCredentials([string(credentialsId: 'DOJO_API_KEY', variable: '_DOJO_API_KEY')]) {
+            sh 'sudo docker run -e DOJO_API_KEY=${_DOJO_API_KEY} $_DOJO_SETTINGS cybercops/dependency-check-maven'
+          }
+          }
+        }
+      }
+    }
+  }
+  environment {
+    _SOURCE_REPO = 'http://68.183.120.111:8082/root/jee-app.git'
+    _DOJO_URL = 'http://68.183.120.111:8000'
+    _DOJO_ENGAGEMENT_ID = '1'
+    _DOJO_SETTINGS = "-e SOURCE_REPO=${_SOURCE_REPO} -e DOJO_URL=${_DOJO_URL} -e DOJO_ENGAGEMENT_ID=${_DOJO_ENGAGEMENT_ID}"
+}
+}

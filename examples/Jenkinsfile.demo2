@@ -1,0 +1,32 @@
+pipeline {
+  agent any
+  stages {
+  
+    stage('Checkout') {
+        steps {
+            checkout scm
+        }
+    }
+    stage('Security build') {
+      parallel {
+        stage('Start parallel builds') {
+          steps {
+            sh 'echo "builds are run!"'
+          }
+        }
+        stage('Start mobsf Analysis') {
+          steps {
+          withCredentials([string(credentialsId: 'MOBSF_API_KEY', variable: '_MOBSF_API_KEY')]) {
+            sh 'sudo docker run  -e MOBSF_API_KEY=${_MOBSF_API_KEY} $_MOBSF_SETTINGS cybercops/mobsf-cli'
+          }
+          }
+        }
+      }
+    }
+  }
+  environment {
+    _MOBSF_ENGINE_URL = 'http://68.183.120.111:8081'
+    _SOURCE_REPO_APK_RAW = "http://68.183.120.111:8082/root/android-app/raw/master/InsecureBankv2.apk"
+    _MOBSF_SETTINGS = "-e SOURCE_REPO_APK_RAW=${_SOURCE_REPO_APK_RAW} -e MOBSF_ENGINE_URL=${_MOBSF_ENGINE_URL}"
+}
+}
