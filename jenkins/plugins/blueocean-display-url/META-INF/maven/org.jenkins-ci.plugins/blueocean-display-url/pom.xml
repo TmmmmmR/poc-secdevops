@@ -26,7 +26,7 @@
          ~ stapler-plugin.version: The Stapler Maven plugin version required by the plugin.
     -->
     <scm-api.version>2.1.1</scm-api.version>
-    <git.version>3.3.0</git.version>
+    <git.version>4.11.2</git.version>
     <blueocean.version>1.1.5</blueocean.version>
   </properties>
 
